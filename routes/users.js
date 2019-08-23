@@ -51,6 +51,7 @@ router.post('', function(req, res, next) {
 
     users.push(newUser);
     res.append(headers.header, headers.value);
+	console.log(newUser);
     res.send(JSON.stringify(newUser));
     return;
   }
